@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produks",
+  "info": {
+    "singularName": "produk",
+    "pluralName": "produks",
+    "displayName": "Produk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "stock": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
