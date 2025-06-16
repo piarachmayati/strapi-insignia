@@ -20,10 +20,10 @@ export default factories.createCoreController('api::produk.produk', ({strapi}) =
     }, 
 
     async delete(ctx) {
-        const {documentId} = ctx.params;
+        const {id} = ctx.params;
 
         try {
-            const entity = await strapi.entityService.delete('api::produk.produk', documentId);
+            const entity = await strapi.entityService.delete('api::produk.produk', id);
 
             ctx.body = {
                 message: 'Produk berhasil dihapus',
